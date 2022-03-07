@@ -66,7 +66,7 @@
   }
 
   .navbar-close {
-    display: block;
+    display: flex;
   }
 
   .skill-wrapper {
@@ -94,9 +94,14 @@
     flex-direction: column;
   }
 
+  .contact-item {
+    margin: 15px 0;
+  }
+
   .contact-right {
     width: 80%;
     margin-bottom: 10px;
+    padding: 0;
   }
 
   .form-input textarea {

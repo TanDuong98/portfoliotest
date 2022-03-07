@@ -16,6 +16,15 @@ html {
   scroll-behavior: smooth;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #34495e;
+  border-radius: 5px;
+}
+
 .portfolio {
 }
 
@@ -49,9 +58,9 @@ html {
   height: 30px;
   width: 30px;
   top: 20px;
-  left: 20px;
-  font-size: 20px;
-  z-index: 1000;
+  right: 10px;
+  font-size: 24px;
+  z-index: 900;
   color: var(--primary-color);
   display: none;
 }
@@ -116,6 +125,26 @@ html {
   height: 50px;
   background-color: var(--primary-color);
   display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-close span {
+  position: absolute;
+  width: 30px;
+  height: 5px;
+  border-radius: 5px;
+  background-color: #fff;
+  transition: all 0.2s ease-in-out;
+}
+
+.navbar-close:hover span:first-child {
+  transform: rotate(585deg);
+}
+
+.navbar-close:hover span:last-child {
+  transform: rotate(-45deg);
+  transition-delay: 0.1s;
 }
 
 /* ----------THEME_COLOR---------- */
@@ -389,6 +418,9 @@ html {
 .education {
   padding: 20px 50px;
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .information-title,
